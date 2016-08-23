@@ -152,11 +152,11 @@ else
                                                                                 sudo systemctl start plexmediaserver >> $PWD/logs/ACDControl-$(date '+%F').log
                                                                                 sudo systemctl start smb >> $PWD/logs/ACDControl-$(date '+%F').log
                                                                                 sudo systemctl start nmb >> $PWD/logs/ACDControl-$(date '+%F').log
-                                                                                wget -q http://172.16.102.9:32400/library/sections/1/refresh?X-Plex-Token=qZWysyAetkq85Fs3E3Tg -O deleteme
+                                                                                wget -q http://IPREVOKED:32400/library/sections/1/refresh?X-Plex-Token=REVOKED -O deleteme
                                                                                 rm $PWD/deleteme
-                                                                                wget -q http://172.16.102.9:32400/library/sections/2/refresh?X-Plex-Token=qZWysyAetkq85Fs3E3Tg -O deleteme
+                                                                                wget -q http://IPREVOKED:32400/library/sections/2/refresh?X-Plex-Token=REVOKED -O deleteme
                                                                                 rm $PWD/deleteme
-                                                                                wget -q http://172.16.102.9:32400/library/sections/3/refresh?X-Plex-Token=qZWysyAetkq85Fs3E3Tg -O deleteme
+                                                                                wget -q http://IPREVOKED:32400/library/sections/3/refresh?X-Plex-Token=REVOKED -O deleteme
                                                                                 rm $PWD/deleteme
                                                                                 echo "ACD backed Plex Sync Completed, see log for file verification!" >> $PWD/logs/ACDControl-$(date '+%F').log
                                                                         else
